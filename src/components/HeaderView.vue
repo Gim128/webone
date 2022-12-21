@@ -8,7 +8,7 @@
   elevate-on-scroll
 >
 
-<v-toolbar-title>CNT</v-toolbar-title>
+<v-toolbar-title class="title">CNT</v-toolbar-title>
 <v-spacer />
 
 <v-list class="d-flex align-center">
@@ -16,14 +16,6 @@
     <v-list-item-title>{{menu.title}}</v-list-item-title>
   </v-list-item>
 </v-list>
-
-<!-- <div>
-    <b-dropdown text="Outline Danger" variant="outline-danger" class="m-2">
-        <b-dropdown-item href="#">Action</b-dropdown-item>
-        <b-dropdown-item href="#">Another action</b-dropdown-item>
-        <b-dropdown-item href="#">Something else here</b-dropdown-item>
-      </b-dropdown>
-</div> -->
   
 </v-app-bar>
 
@@ -31,13 +23,7 @@
 
 <script>
 
-// import bootstrapVue from 'bootstrap-vue';
-
 export default {
-
-    // components: {
-    //     bootstrapVue,
-    // },
 
     name: "HeaderView",
     data(){
@@ -51,6 +37,10 @@ export default {
 }
 </script>
 
-<style>
-
+<style scoped>
+  .title{
+    font-size: 40px !important;
+    color: #0984e3;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+  }
 </style>
