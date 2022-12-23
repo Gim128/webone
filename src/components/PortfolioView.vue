@@ -2,8 +2,12 @@
     <v-container my-15>
         <v-row justify="center">
             <v-col lg="12" class="text-center">
-                <v-subheader class="text-h4 justify-center">CNT Eco-System</v-subheader>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, velit!</p>
+                <v-subheader class="heading text-h4 justify-center"
+                style="font-weight: bold;     padding-bottom: 19px;"
+                >CNT Eco-System</v-subheader>
+                <p style="margin-bottom: -3px;">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, velit!
+                </p>
             </v-col>
 
             <v-col lg="12">
@@ -143,5 +147,5 @@ export default {
 </script>
 
 <style scoped>
-    
+    background: ur
 </style>
