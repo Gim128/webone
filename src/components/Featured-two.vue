@@ -1,13 +1,14 @@
 <template>
   <v-container my-15>
+    <v-row justify="center">
+        <v-subheader class="text-h4" style="padding-bottom: 58px; font-weight: bold">Lorem, ipsum dolor</v-subheader>
+    </v-row>
     <v-row>
         <v-col lg="6" sm="3" xs="3">
             <img src="" alt="">
         </v-col>
 
         <v-col lg="6" sm="3" xs="3">
-            <v-subheader class="text-h4">Lorem, ipsum dolor</v-subheader>
-
             <p class="para-one">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore suscipit soluta minima aut aspernatur nobis facere eum non, fugit deleniti alias laborum illo praesentium consequuntur!
             </p>
@@ -45,8 +46,6 @@
 
 
 <script>
-
-// import {mdiDiamond} from '@mdi/js';
 
 export default {
     name:"Featured-two",
