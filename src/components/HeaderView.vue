@@ -36,11 +36,10 @@ export default {
       menus:[
         {title: 'Home', route: 'home'},
         {title: 'Contact Us', route: 'contactus'},
-        {title: 'Language', route: 'language'}
+        
       ]
     }
   },
-  
 }
 </script>
 
@@ -51,7 +50,5 @@ export default {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
   }
 
-  .avatar{
-    
-  }
+  
 </style>
