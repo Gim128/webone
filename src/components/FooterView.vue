@@ -1,7 +1,7 @@
 <template>
     <div>
         <v-footer padless>
-            <v-col lg="12" style="background-color: #dfe6e9;">
+            <v-col lg="12" sm="3" xs="1" style="background-color: #dfe6e9;">
                 <v-row justify="center">
                     <v-col lg="4" class="text-center">
                         <v-toolbar-title class="mt-5">iCan Lanka (PVT) LTD</v-toolbar-title>

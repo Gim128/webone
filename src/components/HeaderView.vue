@@ -8,14 +8,19 @@
   elevate-on-scroll
 >
 
-<v-toolbar-title class="title">CNT</v-toolbar-title>
+<!-- <v-toolbar-title class="title">CNT</v-toolbar-title> -->
+<v-avatar class="avatar">
+  <img src="../assets/cnt-gold.png" alt="avatar-img">
+</v-avatar>
 <v-spacer />
 
 <v-list class="d-flex align-center">
   <v-list-item link v-for="(menu,index) in menus" :key="index" :to="menu.route">
     <v-list-item-title>{{menu.title}}</v-list-item-title>
+    
   </v-list-item>
 </v-list>
+
   
 </v-app-bar>
 
@@ -31,9 +36,11 @@ export default {
       menus:[
         {title: 'Home', route: 'home'},
         {title: 'Contact Us', route: 'contactus'},
+        {title: 'Language', route: 'language'}
       ]
     }
-  }
+  },
+  
 }
 </script>
 
@@ -42,5 +49,9 @@ export default {
     font-size: 40px !important;
     color: #0984e3;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+  }
+
+  .avatar{
+    
   }
 </style>

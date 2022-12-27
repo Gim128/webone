@@ -10,6 +10,9 @@
       <!-- Featured section -->
       <featured-view />
 
+      <!-- countdown -->
+      <CounterView />
+
       <!-- Featured-Two section -->
       <featured-two />
 
@@ -24,6 +27,7 @@
 </template>
 
 <script>
+import CounterView from './components/CounterView.vue';
 import FeaturedTwo from './components/Featured-two.vue';
 import FeaturedView from './components/FeaturedView.vue';
 import FooterView from './components/FooterView.vue';
@@ -31,7 +35,7 @@ import HeaderView from './components/HeaderView.vue';
 import HeroSection from './components/HeroSection.vue';
 import PortfolioView from './components/PortfolioView.vue';
 export default {
-  components: { HeaderView, HeroSection, FeaturedView, FeaturedTwo, PortfolioView, FooterView },
+  components: { HeaderView, HeroSection, FeaturedView, CounterView, FeaturedTwo, PortfolioView, FooterView },
   name: 'App',
    
   };

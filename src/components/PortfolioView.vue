@@ -1,7 +1,7 @@
 <template>
     <v-container my-15>
         <v-row justify="center">
-            <v-col lg="12" class="text-center">
+            <v-col lg="12" sm="3" xs="1" class="text-center">
                 <v-subheader class="heading text-h4 justify-center"
                 style="font-weight: bold;     padding-bottom: 19px;"
                 >CNT Eco-System</v-subheader>
@@ -10,7 +10,7 @@
                 </p>
             </v-col>
 
-            <v-col lg="12">
+            <v-col lg="12" sm="3" xs="1">
                 <div class="text-center d-flex align-center">  
                     <v-col lg="4" sm="1">
                         
@@ -147,5 +147,5 @@ export default {
 </script>
 
 <style scoped>
-    background: ur
+   
 </style>

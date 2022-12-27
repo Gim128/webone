@@ -1,6 +1,5 @@
 <template>
   <v-container my-15>
-
     <v-row justify="center">
       <v-subheader class="heading text-h4 pb-4" style="font-weight: bold;">Safe & Reliable</v-subheader>
     </v-row>
@@ -8,7 +7,10 @@
     <v-row>
         <v-col lg="6" sm="3" xs="3" style="margin-top: 10x;">
 
-            <strong class="pt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, delectus.</strong>
+          <div class="desc-one">
+            <v-icon color="#17c0eb" class="mr-3">mdi-moon-full</v-icon>
+            <strong class="pt-5 desc-one">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, delectus.</strong>
+          </div>
 
             <p class="desc-2" style="margin-top: 16px;">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -31,18 +33,19 @@
                   </v-list-item-subtitle>
               </v-list-item>
 
-              <v-list-item>
+              <!-- <v-list-item>
                 <v-icon color="#17c0eb" class="mr-3">mdi-rhombus-split</v-icon>
                   <v-list-item-subtitle>
                       Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident illo ex voluptatibus iste voluptatem quos!
                   </v-list-item-subtitle>
-              </v-list-item>
+              </v-list-item> -->
 
             </v-list>
 
             <p class="desc-3">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam, hic maxime vitae alias at quos temporibus modi ea! Vitae assumenda, 
                 repudiandae nisi excepturi dolorum odio fuga provident a reiciendis ipsum ratione ab soluta inventore modi dolore, perferendis quod fugit? Ea!
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit, nobis.
             </p>
 
             <v-spacer></v-spacer>
@@ -75,5 +78,16 @@ export default {
 </script>
 
 <style scope>
-    
+    p.desc-3{
+      padding-top: 15px;
+    }
+
+    p.desc-2{
+      padding-top: 12px;
+    }
+
+    .desc-one{
+      padding-top: 15px;
+      font-size: 20px;
+    }
 </style>
