@@ -10,84 +10,49 @@
                 </p>
         </v-col>
 
-        <!-- <div class="statistic"> -->
-            <v-col lg="12" sm="3" xs="1" style="box-sizing: border-box;">
-                <div class="text-center d-flex align-center oData">
-                    <v-col lg="4" sm="1" xs="1">
-                        <v-card
-                            elevation="2"
-                            shaped
-                            class="mx-auto"
-                            max-width="344"
-                            outlined
-                            >
-                            
-                            <v-list-item>
-                                <v-avatar class="mr-5"> 
-                                    <img src="../assets/cnt-silver.png" alt="">
-                                </v-avatar>
-
-                                <p class="num">
-                                    $
-                                    <span id="cuurency">223,354,154</span>
-                                </p>
-
-                            </v-list-item>
-
-                        </v-card>
-                    </v-col>
-
-                    <v-col lg="4" sm="1" xs="1">
-                        <v-card
-                            elevation="2"
-                            shaped
-                            class="mx-auto"
-                            max-width="344"
-                            outlined
-                            >
-                            
-                            <v-list-item>
-                                <v-avatar class="mr-5"> 
-                                    <img src="../assets/cnt-silver.png" alt="">
-                                </v-avatar>
-
-                                <p class="num">
-                                    $
-                                    <span id="cuurency">223,354,154</span>
-                                </p>
-
-                            </v-list-item>
-
-                        </v-card>
-                    </v-col>
-
-                    <v-col lg="4" sm="1" xs="1">
-                        <v-card
-                            elevation="2"
-                            shaped
-                            class="mx-auto"
-                            max-width="344"
-                            outlined
-                            >
-                            
-                            <v-list-item>
-                                <v-avatar class="mr-5"> 
-                                    <img src="../assets/cnt-silver.png" alt="">
-                                </v-avatar>
-
-                                <p class="num">
-                                    $
-                                    <span id="cuurency">223,354,154</span>
-                                </p>
-
-                            </v-list-item>
-
-                        </v-card>
-                    </v-col>
-
-                </div>
+        <v-row class="mt-7 mb-7" >
+            <v-col cols="12" lg="4">
+                <v-card class="pa-6 rounded-xl " elevation="5">
+                    <div class="d-flex align-center justify-space-between">  
+                        <div class="">
+                           <img class="" src="../assets/cn-red-two.png"  style="mt-5 width: 100px; height: 100px;"/>
+                        </div>
+                        <h2 class="black--text mr-2">$223,256.00 <v-icon color="green" style="margin-right: 28px !important; font-size: 33px; margin-bottom: 10px;">mdi-arrange-send-to-back</v-icon></h2>
+                    </div>
+                    <v-card-text class="text-center">
+                        MARKET CAP
+                    </v-card-text>
+                </v-card>
             </v-col>
-        <!-- </div> -->
+
+            <v-col cols="12" lg="4">
+                <v-card class="pa-6 rounded-xl " elevation="5">
+                    <div class="d-flex align-center justify-space-between">  
+                        <div class="">
+                           <img class="" src="../assets/cnt-silver.png"  style="mt-5 width: 100px; height: 100px;"/>
+                        </div>
+                        <h2 class="black--text mr-2">$223,256.00 <v-icon color="green" style="margin-right: 28px !important; font-size: 33px; margin-bottom: 10px;">mdi-arrange-send-to-back</v-icon></h2>
+                    </div>
+                    <v-card-text class="text-center">
+                        MARKET CAP
+                    </v-card-text>
+                </v-card>
+            </v-col>
+
+            <v-col cols="12" lg="4">
+                <v-card class="pa-6 rounded-xl " elevation="5">
+                    <div class="d-flex align-center justify-space-between">  
+                        <div class="">
+                           <img class="" src="../assets/cnt-gold.png"  style="mt-5 width: 100px; height: 100px;"/>
+                        </div>
+                        <h2 class="black--text mr-2">$223,256.00 <v-icon color="green" style="margin-right: 28px !important; font-size: 33px; margin-bottom: 10px;">mdi-arrange-send-to-back</v-icon></h2>
+                    </div>
+                    <v-card-text class="text-center">
+                        MARKET CAP
+                    </v-card-text>
+                </v-card>
+            </v-col>
+        </v-row>
 
     </v-row>
   </v-container>
