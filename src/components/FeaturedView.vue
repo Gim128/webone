@@ -1,20 +1,22 @@
 <template>
   <v-container my-15>
-    <v-row justify="center">
-      <v-subheader class="heading text-h4 pb-4" style="font-weight: bold;">Safe & Reliable</v-subheader>
-    </v-row>
-
     <v-row>
-        <v-col lg="6" sm="3" xs="3" style="margin-top: 10x;">
+      
+        <v-col lg="6" class="featured-one">
+            <img src="" alt="">
+        </v-col>
+
+        <v-col lg="6" style="margin-top: 10x;">
+
+          <v-subheader class="heading text-h4 pb-4" style="font-weight: bold;">{{$t('message-eight')}}</v-subheader>
 
           <div class="desc-one">
             <v-icon color="#17c0eb" class="mr-3">mdi-moon-full</v-icon>
-            <strong class="pt-5 desc-one">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, delectus.</strong>
+            <strong class="pt-5 desc-one">{{$t('message-four')}}</strong>
           </div>
 
             <p class="desc-2" style="margin-top: 16px;">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Optio ducimus commodi pariatur est blanditiis nemo accusantium, voluptatibus natus id esse corrupti architecto delectus cupiditate repellendus nobis modi eligendi.
+                {{$t('message-five')}}
             </p>
 
             <v-list>
@@ -22,45 +24,39 @@
               <v-list-item>
                 <v-icon color="#17c0eb" class="mr-3">mdi-rhombus-split</v-icon>
                   <v-list-item-subtitle>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident illo ex voluptatibus iste voluptatem quos!
+                      {{$t('message-six')}}
                   </v-list-item-subtitle>
               </v-list-item>
 
               <v-list-item>
                 <v-icon color="#17c0eb" class="mr-3">mdi-rhombus-split</v-icon>
                   <v-list-item-subtitle>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident illo ex voluptatibus iste voluptatem quos!
+                      {{$t('message-seven')}}
                   </v-list-item-subtitle>
               </v-list-item>
-
-              <!-- <v-list-item>
-                <v-icon color="#17c0eb" class="mr-3">mdi-rhombus-split</v-icon>
-                  <v-list-item-subtitle>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident illo ex voluptatibus iste voluptatem quos!
-                  </v-list-item-subtitle>
-              </v-list-item> -->
 
             </v-list>
 
             <p class="desc-3">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam, hic maxime vitae alias at quos temporibus modi ea! Vitae assumenda, 
-                repudiandae nisi excepturi dolorum odio fuga provident a reiciendis ipsum ratione ab soluta inventore modi dolore, perferendis quod fugit? Ea!
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit, nobis.
+                {{$t('message-nine')}}
             </p>
 
             <v-spacer></v-spacer>
 
-            <div class="card d-flex align-center mr-6">
+            <div class="btn-group">
+              <v-btn @click="btnClick" block color="#2e86de" elevation="3" x-large class="btn-address-1">
+                <span class="mr-3" style="color: white;">View TRON Contract Address <v-icon>mdi-arrow-right-thin</v-icon></span>
+              </v-btn>
+
+              <v-spacer />
+
+              <!-- <v-btn @click="btnAddress" block color="#2e86de" elevation="3" x-large class="btn-address-2">
+                <span class="mr-3" style="color: white;">View CNT Contract Address <v-icon>mdi-arrow-right-thin</v-icon></span>
+              </v-btn> -->
 
             </div>
-
-           
-
-            <!-- <dialog-view /> -->
         </v-col>
-        <v-col lg="6" sm="3" xs="3">
-            <img src="" alt="">
-        </v-col>
+
     </v-row>
   </v-container>
 </template>
@@ -74,6 +70,16 @@ export default {
   },
 
     name: "FeaturedView",
+
+    methods: {
+      btnClick(){
+        window.open('https://tronscan.org/#/token20/TX8yuS4sRtbSXJVtjsmR7pSDQDrioWopKS/code')
+      },
+      btnAddress(){
+        window.open('https://www.google.com/')
+      }
+    },
+
 }
 </script>
 
@@ -90,4 +96,14 @@ export default {
       padding-top: 15px;
       font-size: 20px;
     }
+
+    .btn-group .btn-address-1 {
+      margin-bottom: 19px;
+      margin-top: 44px;
+    }
+
+    .featured-one{
+      background-image: url('../assets/featured-two.png');
+    }
+
 </style>

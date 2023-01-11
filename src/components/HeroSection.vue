@@ -1,22 +1,21 @@
 <template>
     <div class="hero" >
-
-        <v-container >
+        <v-container pt-15>
             <v-row>
-                <v-col lg="6" sm="3" xs="3">
-                    <h2 class="intro-text" style="color: black;">The Safe & Secure Coin</h2>
+                <v-col lg="6">
+                    <h2 class="intro-text" style="color: white;">{{$t('message')}}</h2>
                     <v-spacer />
                     <v-spacer />
-                    <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui possimus fuga rem id ipsa nulla eius ullam, labore porro repellat!</p>
+                    <p class="description" style="color: beige;">{{$t('message-one')}}</p>
                     <v-spacer />
-                    <p class="dub-text" style="padding-left: 8%;">
-                        <span style="color:#0097e6;">CNT</span> 
-                        -Entrance to the BLockchain World.            
+                    <p class="dub-text" style="padding-left: 8%; color: beige;">
+                        <span style="color: #c0392b;">{{$t('message-two')}}</span> 
+                        {{$t('message-three')}}           
                     </p>
                 </v-col>
-                <v-col lg="6" sm="3" xs="3">
-                    
-                </v-col>
+                <!-- <v-col lg="6" style="padding-top: 57px;">
+                    <img src="../assets/hero-img.png" alt="">
+                </v-col> -->
             </v-row>
         </v-container>
     </div>
@@ -24,15 +23,16 @@
 
 <script>
 export default {
-    name:"HeroSection"
+    name:"HeroSection",
 }
 </script>
 
 <style scoped>
     .hero{
+        background-image: url('../assets/hero-img.jpeg');
         opacity: 100%;
         background-size: cover;
-        max-height: 85vh;
+        max-height: 90vh;
         height: 90vh;
         width: 100%
     }
@@ -41,7 +41,7 @@ export default {
         font-size: 70px;
         font-weight: 750;
         font-family: sans-serif,serif;
-        padding-top: 39%;
+        padding-top: 28%;
         padding-left: 7%;
     }
 

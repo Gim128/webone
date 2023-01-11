@@ -1,10 +1,10 @@
 <template>
-    <div>
+    <div class="footer-head">
         <v-footer padless>
-            <v-col lg="12" sm="3" xs="1" style="background-color: #dfe6e9;">
+            <v-col lg="12" md="4" sm="2" xs="1" class="bg-img" style="background-color: #dfe6e9; ">
                 <v-row justify="center">
-                    <v-col lg="4" class="text-center">
-                        <v-toolbar-title class="mt-5">iCan Lanka (PVT) LTD</v-toolbar-title>
+                    <v-col lg="4" md="2" sm="1" xs="1" class="text-center">
+                        <v-toolbar-title class="mt-5">{{$t('message-thirt-three')}}</v-toolbar-title>
                         <v-card-text>
                             <v-btn
                                 v-for="icon in icons"
@@ -20,24 +20,48 @@
                             </v-btn>
                         </v-card-text>
         
-                        <v-subheader class="desc-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                            Aperiam tenetur eius sunt illo nemo est esse sint omnis iusto hic.
+                        <v-subheader class="desc-5">
+                            {{$t('message-thirty-four')}}
                         </v-subheader>
-        
-                        <v-form class="mt-4">
-                            <v-text-field label="Email" outlined dense />
-                            <v-btn rounded color="success">Subscription</v-btn>
-                        </v-form>
-        
+                        
+                        
+                        
+
                     </v-col>
                 </v-row>
+
+                <div class="mt-5">
+                    <v-row style="padding-left: 254px;"> 
+                        <v-btn @click="whitePaper" class="mr-4 white--text" rounded color="#2e86de">
+                            <span class="mr-3">{{$t('message-thirty-nine')}}</span>
+                            <v-icon>mdi-text-box</v-icon>
+                        </v-btn>
+                        <v-btn @click="partnership" class="mr-4 white--text" rounded color="#2e86de">
+                            <span class="mr-3">{{$t('message-forty')}}</span>
+                            <v-icon>mdi-handshake</v-icon>
+                        </v-btn>
+                        <v-btn @click="partnership" class="mr-4 white--text" rounded color="#2e86de">
+                            <span class="mr-3">{{$t('message-forty')}}</span>
+                            <v-icon>mdi-handshake</v-icon>
+                        </v-btn>
+                        <v-btn @click="partnership" class="mr-4 white--text" rounded color="#2e86de">
+                            <span class="mr-3">{{$t('message-forty')}}</span>
+                            <v-icon>mdi-handshake</v-icon>
+                        </v-btn>
+                        <v-btn @click="partnership" class="mr-4 white--text" rounded color="#2e86de">
+                            <span class="mr-3">{{$t('message-forty')}}</span>
+                            <v-icon>mdi-handshake</v-icon>
+                        </v-btn>
+                    </v-row>
+                    
+                </div>
         
                 <div class="mt-10">
                     <v-divider></v-divider>
                     <v-subheader>
-                        © Copyright iCan Lanka. All Rights Reserved 2022  {{ new Date().getFullYear() }} — <strong>iCan Lanka (PVT) LTD, Sri Lanka</strong>
+                        {{$t('message-thirty-six')}}  {{ new Date().getFullYear() }} — <strong>{{$t('message-thirty-svnth')}}</strong>
                         <v-spacer />
-                        <strong>Devloped by iCan Lanka DEV's 2022.</strong>
+                        <strong>{{$t('message-thirty-eight')}}</strong>
                     </v-subheader>
                 </div>
         
@@ -51,6 +75,13 @@
 <script>
 export default {
     name: "FooterView",
+
+    methods: {
+        whitePaper() {
+            window.open('https://www.freepik.com/')
+        },
+    },
+
     data(){
         return{
             icons: [
@@ -65,5 +96,9 @@ export default {
 </script>
 
 <style scope>
-   
+   .bg-img {
+       
+        background-image: url('https://static.vecteezy.com/system/resources/previews/001/874/132/original/abstract-geometric-white-background-free-vector.jpg');
+        background-repeat: repeat-x;
+   }
 </style>

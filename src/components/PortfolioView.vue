@@ -1,50 +1,50 @@
 <template>
     <v-container my-15>
         <v-row justify="center">
-            <v-col lg="12" sm="3" xs="1" class="text-center">
+            <v-col lg="12" md="4" sm="3" xs="1" class="text-center">
                 <v-subheader class="heading text-h4 justify-center"
                 style="font-weight: bold;     padding-bottom: 19px;"
-                >CNT Eco-System</v-subheader>
+                >{{$t('message-twnty-two')}}</v-subheader>
                 <p style="margin-bottom: -3px;">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, velit!
+                    {{$t('message-twnty-three')}}
                 </p>
             </v-col>
 
-            <v-col lg="12" sm="3" xs="1">
+            <v-col lg="12" md="3" sm="1" xs="1">
                 <div class="text-center d-flex align-center">  
-                    <v-col lg="4" sm="1">
+                    <v-col lg="4" md="1" sm="1" xs="1">
                         
                         <img src="../assets/crown.png" alt="">
                         <div>
-                            <v-chip @click="activePortfolio = 'webapp' " :color="activePortfolio === 'webapp' ? '#1e90ff':'' " class="mx-5" style="color: white;">Lorem, ipsum dolor 01</v-chip>
+                            <v-chip @click="activePortfolio = 'webapp' " :color="activePortfolio === 'webapp' ? '#1e90ff':'' " class="mx-5" style="color: white;">{{$t('message-twnty-four')}}</v-chip>
                         </div>
-                        <h3>Lorem, ipsum dolor</h3>
+                        <h3>{{$t('message-twnty-five')}}</h3>
                         <p class="desc-one">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, nisi!
+                            {{$t('message-twnty-six')}}
                         </p>
                     </v-col>
 
-                    <v-col lg="4" sm="1">
+                    <v-col lg="4" md="1" sm="1" xs="1">
                         
                         <img src="../assets/crown.png" alt="">
                         <div>
-                            <v-chip @click="activePortfolio = 'crypto' " :color="activePortfolio === 'crypto' ? '#1e90ff':'' " class="mx-5" style="color: white">Lorem, ipsum dolor 02</v-chip>
+                            <v-chip @click="activePortfolio = 'crypto' " :color="activePortfolio === 'crypto' ? '#1e90ff':'' " class="mx-5" style="color: white">{{$t('message-twnty-svnt')}}</v-chip>
                         </div>
-                        <h3>Lorem, ipsum dolor</h3>
+                        <h3>{{$t('message-twnty-eighth')}}</h3>
                         <p class="desc-two">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, nisi!
+                            {{$t('message-twnty-nine')}}
                         </p>
                     </v-col>
 
-                    <v-col lg="4" sm="1">
+                    <v-col lg="4" md="1" sm="1" xs="1">
                         
                         <img src="../assets/crown.png" alt="">
                         <div>
-                            <v-chip @click="activePortfolio = 'coin' " :color="activePortfolio === 'coin' ? '#1e90ff':'' " class="mx-5" style="color: white">Lorem, ipsum dolor 03</v-chip>
+                            <v-chip @click="activePortfolio = 'coin' " :color="activePortfolio === 'coin' ? '#1e90ff':'' " class="mx-5" style="color: white">{{$t('message-thirty')}}</v-chip>
                         </div>
-                        <h3>Lorem, ipsum dolor</h3>
+                        <h3>{{$t('message-thirty-one')}}</h3>
                         <p class="desc-three">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, nisi!
+                            {{$t('message-thity-two')}}
                         </p>
                     </v-col>
 
@@ -117,7 +117,6 @@ export default {
                 {title: 'Web App 1', image:'https://img.freepik.com/free-photo/beautiful-cryptocurrency-hologram-design_23-2149250206.jpg?w=1380&t=st=1671706163~exp=1671706763~hmac=b0119c9b1c9ea2bab93a0badfd2352105d860ebaecc1bd0261b5c8d4d2b4bc52'},
                 {title: 'Web App 1', image:'https://img.freepik.com/free-photo/beautiful-cryptocurrwncy-concept_23-2149250208.jpg?w=1380&t=st=1671706249~exp=1671706849~hmac=9907656b97fba251f56e1f65ebcf96d6ac2125c7099e5fd9de2588c09121f56a'},
                 {title: 'Web App 1', image:'https://img.freepik.com/free-photo/beautiful-cryptocurrwncy-concept_23-2149250212.jpg?w=1380&t=st=1671706269~exp=1671706869~hmac=97b508cbcd0500b8eed7562e3d8019a503b50c15856a6db30aabab09bc48bb9a'},
-                {title: 'Web App 1', image:'https://img.freepik.com/free-photo/woman-dropping-banknotes-into-jar-with-rolled-banknotes-table-papers-table_1268-17482.jpg?w=1380&t=st=1671706281~exp=1671706881~hmac=e540b30f96ee32d36edbf70c35af426c7816f3a66a86471921a8734b2102be9e'},
             ],
             cryptoApps:[
                 {title: 'crypto1', image:'https://img.freepik.com/free-photo/mobile-phone-app-streaming-music_53876-98082.jpg?w=1380&t=st=1671706459~exp=1671707059~hmac=816abf7c278c5392f17454cc25d10b9fa34f98b75cb89ae207048371f6f9c165'},
@@ -128,7 +127,6 @@ export default {
                 {title: 'crypto1', image:'https://img.freepik.com/free-photo/group-people-working-website-template_53876-25068.jpg?w=1380&t=st=1671706563~exp=1671707163~hmac=ea45529b1c6b9cfd21793d196627c1aa8957440974b968a0400385edd45cc329'},
                 {title: 'crypto1', image:'https://img.freepik.com/free-photo/hands-holding-smartphone-close-up_23-2149168656.jpg?w=1380&t=st=1671706579~exp=1671707179~hmac=9a5ac987c0b025f5083cc22ec706e687ff65823c8f4581cd78b349d81093e4aa'},
                 {title: 'crypto1', image:'https://img.freepik.com/free-photo/close-up-hand-holding-smartphone_23-2149153407.jpg?w=1380&t=st=1671773327~exp=1671773927~hmac=b81d1944d3d298501223d6c3035076914c1b2e3915c22444e251fe70f11d76eb'},
-                {title: 'crypto1', image:'https://img.freepik.com/free-photo/corporate-management-strategy-solution-branding-concept_53876-167088.jpg?w=1380&t=st=1671773587~exp=1671774187~hmac=dc023fc30d0bd1c3c4e3b73cbeca9564a33aeb4921b2d135669eec2ab381c9ab'},
             ],
             coinApps :[
                 {title: 'coin03', image:'https://img.freepik.com/free-photo/medium-shot-man-wearing-vr-glasses_23-2149126949.jpg?w=1380&t=st=1671772909~exp=1671773509~hmac=5fda877bae49df10d2b773bb2352634ee2b056faa2d09e3ccf344cda2932d70d'},
@@ -139,7 +137,6 @@ export default {
                 {title: 'coin03', image:'https://img.freepik.com/free-photo/man-wearing-smart-glasses-touching-virtual-screen-futuristic-technology-digital-remix_53876-104247.jpg?w=1380&t=st=1671773141~exp=1671773741~hmac=9f69f61292aec470c17401484cce8e88ea2bca58a0721fbcb5732133aaf2c8c2'},
                 {title: 'coin03', image:'https://img.freepik.com/free-photo/hologram-projector-screen-with-cloud-system-technology_53876-108502.jpg?w=1380&t=st=1671773186~exp=1671773786~hmac=0749fc624fe9582cc480dd27b96a8b6555b5bc7221c76145283c40904ce8d600'},
                 {title: 'coin03', image:'https://img.freepik.com/free-photo/rendering-abstract-futuristic-background-with-glowing-neon-blue-orange-lights_181624-19807.jpg?w=1380&t=st=1671773206~exp=1671773806~hmac=70c44b9fe48a45f4a8b51fb5284bf3491733bf63af5d691c1652f684ec2136d8'},
-                {title: 'coin03', image:'https://img.freepik.com/free-photo/close-up-hand-holding-futuristic-screen_23-2149126945.jpg?w=1380&t=st=1671773243~exp=1671773843~hmac=07407e90bd6e580ad9c27528ac1d078761c49a6136d16a1a5e459ccf2d3105e2'},
             ]
         }
     }
