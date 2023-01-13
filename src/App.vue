@@ -1,4 +1,5 @@
 <template>
+
   <v-app id="inspire">
     <v-app-bar
       app
@@ -12,7 +13,7 @@
         <v-tab href="#home">Home</v-tab>
       </v-tabs>
 
-      <div class="text-center">
+      <div class="text-center cursor-pointer">
         <v-menu offset-y>
           <template v-slot:activator="{ on, attrs }">
             <h4
@@ -36,14 +37,12 @@
       </div>
 
     </v-app-bar>
-    <!-- <header-view /> -->
+    
    
     <v-main>
-      <Header>
-        <Navbar />
-      </Header>
+     
+      <!-- <navbar-component /> -->
 
-      <!-- hero section -->
       <hero-section /> 
 
       <!-- Featured section -->
@@ -68,15 +67,14 @@
 <script>
 
 import CounterView from './components/CounterView.vue';
+// import NavbarComponent from './components/NavbarComponent.vue';
 import FeaturedTwo from './components/Featured-two.vue';
 import FeaturedView from './components/FeaturedView.vue';
 import FooterView from './components/FooterView.vue';
-// import HeaderView from './components/HeaderView.vue';
 import HeroSection from './components/HeroSection.vue';
-import Navbar from './components/Navbar.vue';
 import PortfolioView from './components/PortfolioView.vue';
 export default {
-  components: {HeroSection, FeaturedView, CounterView, FeaturedTwo, PortfolioView, FooterView },
+  components: {HeroSection, FeaturedView, CounterView, FeaturedTwo, PortfolioView, FooterView},
   name: 'App',
 
   data: () => ({
@@ -90,9 +88,5 @@ export default {
 </script>
 
 <style>
-  header {
-    width: 100vw;
-    background-color: #222;
-    padding: 15px;
-  }
+  
 </style>

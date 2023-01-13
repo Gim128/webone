@@ -1,6 +1,6 @@
 <template>
     <div class="footer-head">
-        <v-footer padless>
+        <v-footer  padless>
             <v-col lg="12" md="4" sm="2" xs="1" class="bg-img" style="background-color: #dfe6e9; ">
                 <v-row justify="center">
                     <v-col lg="4" md="2" sm="1" xs="1" class="text-center">
@@ -30,28 +30,13 @@
                     </v-col>
                 </v-row>
 
-                <div class="mt-5">
-                    <v-row style="padding-left: 254px;"> 
+                <div class="mt-5 text-center">
+                    <v-row justify="center"> 
                         <v-btn @click="whitePaper" class="mr-4 white--text" rounded color="#2e86de">
                             <span class="mr-3">{{$t('message-thirty-nine')}}</span>
                             <v-icon>mdi-text-box</v-icon>
                         </v-btn>
-                        <v-btn @click="partnership" class="mr-4 white--text" rounded color="#2e86de">
-                            <span class="mr-3">{{$t('message-forty')}}</span>
-                            <v-icon>mdi-handshake</v-icon>
-                        </v-btn>
-                        <v-btn @click="partnership" class="mr-4 white--text" rounded color="#2e86de">
-                            <span class="mr-3">{{$t('message-forty')}}</span>
-                            <v-icon>mdi-handshake</v-icon>
-                        </v-btn>
-                        <v-btn @click="partnership" class="mr-4 white--text" rounded color="#2e86de">
-                            <span class="mr-3">{{$t('message-forty')}}</span>
-                            <v-icon>mdi-handshake</v-icon>
-                        </v-btn>
-                        <v-btn @click="partnership" class="mr-4 white--text" rounded color="#2e86de">
-                            <span class="mr-3">{{$t('message-forty')}}</span>
-                            <v-icon>mdi-handshake</v-icon>
-                        </v-btn>
+                        
                     </v-row>
                     
                 </div>

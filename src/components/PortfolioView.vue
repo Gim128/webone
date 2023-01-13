@@ -14,7 +14,7 @@
                 <div class="text-center d-flex align-center">  
                     <v-col lg="4" md="1" sm="1" xs="1">
                         
-                        <img src="../assets/crown.png" alt="">
+                        <!-- <img src="../assets/crown.png" alt=""> -->
                         <div>
                             <v-chip @click="activePortfolio = 'webapp' " :color="activePortfolio === 'webapp' ? '#1e90ff':'' " class="mx-5" style="color: white;">{{$t('message-twnty-four')}}</v-chip>
                         </div>
@@ -26,7 +26,7 @@
 
                     <v-col lg="4" md="1" sm="1" xs="1">
                         
-                        <img src="../assets/crown.png" alt="">
+                        <!-- <img src="../assets/crown.png" alt=""> -->
                         <div>
                             <v-chip @click="activePortfolio = 'crypto' " :color="activePortfolio === 'crypto' ? '#1e90ff':'' " class="mx-5" style="color: white">{{$t('message-twnty-svnt')}}</v-chip>
                         </div>
@@ -38,7 +38,7 @@
 
                     <v-col lg="4" md="1" sm="1" xs="1">
                         
-                        <img src="../assets/crown.png" alt="">
+                        <!-- <img src="../assets/crown.png" alt=""> -->
                         <div>
                             <v-chip @click="activePortfolio = 'coin' " :color="activePortfolio === 'coin' ? '#1e90ff':'' " class="mx-5" style="color: white">{{$t('message-thirty')}}</v-chip>
                         </div>
